@@ -1,0 +1,33 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Font Awesome
+@import '~font-awesome/scss/font-awesome';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+  background-color: $body-bg;
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+}
+
+.header {
+  background: lightblue;
+  padding: 50px;
+}
+
+.content {
+  min-height: 300px;
+  padding: 50px 0;
+}
+
+.footer {
+  background-color: lightgreen;
+  padding: 50px;
+}

@@ -1,0 +1,17 @@
+{
+    "name": "d1s1g4codelovers/markup",
+    "description": "Markup is the starting point of a simple, automated-tasking project with pug, sass, bootstrap v4 and font-awesome.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Xuan Quynh",
+            "email": "nguyen.xuan.quynh@sun-asterisk.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "brach-alias": "1.0-dev"
+    }
+}

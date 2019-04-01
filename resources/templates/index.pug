@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="templateport" screen-list="width=device-width, initial-scale=1")
+    title Screens
+    link(rel="stylesheet" type="text/css" href="/css/app.css")
+    style(type="text/css").
+      .screen-list table thead tr th:nth-child(1) {
+        width: 50px;
+      }
+  body
+    div.container
+      div.row
+        div.col
+          div.screen-list
+            div.screen-list__title
+              h1.text-center Screens
+            div.screen-list__body
+              div.table-responsive
+                  table.table.table-sm.table-bordered.table-hover
+                    thead.thead-dark
+                      tr
+                        th.text-center #
+                        th Link
+                        th Path
+                        th Description
+                    tbody
+                      - var i = 1; // Increments.
+                      each files, template in templates
+                        each file in files
+                          - var href = `/layouts/${template}/${file.name}.html`;
+                          - var title = `${template}.${file.name}`;
+                          - var path = `${template}/${file.name}.html`;
+                          tr
+                            td.text-center= i++
+                            td
+                              a(target="_blank" href=href)= title
+                            td= path
+                            td= file.description
+    script(src="/js/app.js")

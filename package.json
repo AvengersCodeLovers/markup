@@ -1,0 +1,33 @@
+{
+    "name": "@d1s1g4codelovers/markup",
+    "version": "0.1.0",
+    "description": "Markup is the starting point of a simple, automated-tasking project with pug, sass, bootstrap v4 and font-awesome.",
+    "license": "MIT",
+    "author": "Quynh Xuan Nguyen <seriquynh@gmail.com>",
+    "scripts": {
+        "dev": "yarn run development",
+        "development": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "yarn run development --watch",
+        "watch-poll": "yarn run watch --watch-poll",
+        "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "yarn run production",
+        "production": "cross-env NODE_ENV=production webpack --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "start": "node server.js"
+    },
+    "devDependencies": {
+        "bootstrap": "^4.0.0",
+        "cross-env": "^5.1",
+        "express": "^4.16.4",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^4.0.7",
+        "laravel-mix-pug": "^0.3.0",
+        "lodash": "^4.17.5",
+        "popper.js": "^1.12",
+        "pug": "^2.0.3",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.8"
+    }
+}

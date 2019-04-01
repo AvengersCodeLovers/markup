@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    block title
+      title= title || 'Markup'
+    block styles
+      link(rel="stylesheet" type="text/css" href="/css/app.css")
+  body
+    div.container
+      div.row
+        div.col
+          header.header Header
+      div.row
+        div.col
+          section.content
+            block content
+              h1= title || 'Markup'
+      div.row
+        div.col
+          footer.footer Footer
+    block scripts
+      script(src="/js/app.js")
